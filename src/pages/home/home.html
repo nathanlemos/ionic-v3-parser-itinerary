@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-searchbar #searchbar
+  *ngIf="isSearching"
+  [(ngModel)]="searchQuery"
+  (ionInput)="getItems($event)"
+  [showCancelButton]="true"
+  (ionCancel)="searchHeader()"
+  placeholder="Código ou nome da linha">
+</ion-searchbar>
+<ion-navbar *ngIf="!isSearching" color="primary">
+  <ion-title>
+    {{ viewTitle[tabIndex] }}
+  </ion-title>
+  <ion-buttons start *ngIf="tabIndex == 0">
+    <button ion-button item-right icon-left (click)="searchHeader()">
+      <ion-icon name="search" ></ion-icon> 
+    </button>
+  </ion-buttons>
+  <ion-buttons start *ngIf="tabIndex == 1">
+    <button ion-button item-right icon-left (click)="updateFavorites()">
+      <ion-icon name="refresh" ></ion-icon> 
+    </button>
+  </ion-buttons>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <div *ngFor="let route of routes">
+      <ion-item-sliding #item *ngIf=" tabIndex == 0 || checkFavorites(route.route_id) > -1">
+        <ion-item  (click)="detail(route)">
+          <ion-icon name="ios-bus-outline" item-left large icon-container ></ion-icon>
+          <h2>Linha {{route.route_name}}</h2>
+          <p>{{route.route_description}}</p>
+        </ion-item>
+        <ion-item-options side="right" *ngIf="tabIndex == 1" >
+          <button ion-button (click)="removeFavorite(route.route_id)" color="danger">
+          Remover
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </div>
+  </ion-list>
+
+
+  <div class="div-msg" *ngIf="routes.length == 0">
+      Sem resultados para {{searchQuery}}
+  </div>
+
+  
+
+    <div class="div-msg" *ngIf="favorites.length == 0 && tabIndex == 1"> 
+      Você não possui favoritos <br>
+      ou sua lista está desatualizada
+    </div>
+
+</ion-content>

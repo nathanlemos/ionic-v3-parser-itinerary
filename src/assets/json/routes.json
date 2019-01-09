@@ -1,0 +1,260 @@
+[
+ {
+  "route_name": "100",
+  "route_id": "100",
+   "route_description": "BRT- Vetor"
+ },
+
+ {
+  "route_name": "10A",
+  "route_id": "10",
+   "route_description": "Terminal Oeste / Cartafina"
+ },
+
+ {
+  "route_name": "11D",
+  "route_id": "11",
+   "route_description": "Terminal Oeste / Jd. Uberaba"
+ },
+
+ {
+  "route_name": "12I",
+  "route_id": "12",
+   "route_description": "Capelinha do Barreiro / Uberaba"
+ },
+
+ {
+  "route_name": "13F",
+  "route_id": "13",
+   "route_description": "Terminal Oeste /  IFTM"
+ },
+
+ {
+  "route_name": "14B",
+  "route_id": "14",
+   "route_description": "Boa Vista / Volta Grande"
+ },
+
+ {
+  "route_name": "15F",
+  "route_id": "15",
+   "route_description": "Terminal Oeste / Distrito Industrial 02"
+ },
+
+ {
+  "route_name": "16I",
+  "route_id": "16",
+   "route_description": "Santa Fé"
+ },
+
+ {
+  "route_name": "17F",
+  "route_id": "17",
+   "route_description": "Terminal Oeste / UFTM"
+ },
+
+ {
+  "route_name": "18E",
+  "route_id": "18",
+   "route_description": "Terminal Oeste / Jd. Triângulo"
+ },
+
+ {
+  "route_name": "19C",
+  "route_id": "19",
+   "route_description": "Santa Maria / Uniube"
+ },
+
+ {
+  "route_name": "20B",
+  "route_id": "20",
+   "route_description": "Recanto das Flores"
+ },
+
+ {
+  "route_name": "21D",
+  "route_id": "21",
+   "route_description": "Terminal Oeste / Alfredo Freire"
+ },
+
+ {
+  "route_name": "22F",
+  "route_id": "22",
+   "route_description": "Terminal Oeste / Vila Militar"
+ },
+
+ {
+  "route_name": "23E",
+  "route_id": "23",
+   "route_description": "Norte 1"
+ },
+
+ {
+  "route_name": "24E",
+  "route_id": "24",
+   "route_description": "Norte 2"
+ },
+
+ {
+  "route_name": "25D",
+  "route_id": "1",
+   "route_description": "Jardim Copacabana"
+ },
+
+ {
+  "route_name": "26D",
+  "route_id": "2",
+   "route_description": "Girassóis"
+ },
+
+ {
+  "route_name": "27D",
+  "route_id": "3",
+   "route_description": "Beija-Flor"
+ },
+
+ {
+  "route_name": "28D",
+  "route_id": "28",
+   "route_description": "Jardim Marajó/Via Espanha/Terminal Oeste"
+ },
+
+ {
+  "route_name": "29D",
+  "route_id": "8",
+   "route_description": "Jardim Morumbi / Via Ilha de Marajó"
+ },
+
+ {
+  "route_name": "50A",
+  "route_id": "50",
+   "route_description": "Terminal Oeste / Abadia"
+ },
+
+ {
+  "route_name": "51H",
+  "route_id": "4",
+   "route_description": "Elza Amuí"
+ },
+
+ {
+  "route_name": "52H",
+  "route_id": "52",
+   "route_description": "Terminal Leste / Antônio Barbosa"
+ },
+
+ {
+  "route_name": "53A",
+  "route_id": "53",
+   "route_description": "Terminal Oeste / Valim de Melo"
+ },
+
+ {
+  "route_name": "54H",
+  "route_id": "54",
+   "route_description": "Terminal Leste / Jd. Primavera"
+ },
+
+ {
+  "route_name": "55G",
+  "route_id": "55",
+   "route_description": "Jardim Alvorada / Praça Rui Barbosa"
+ },
+
+ {
+  "route_name": "56G",
+  "route_id": "56",
+   "route_description": "Jd. Maracanã (via Abadia)"
+ },
+
+ {
+  "route_name": "57A",
+  "route_id": "57",
+   "route_description": "Terminal Oeste / Jd. Italia"
+ },
+
+ {
+  "route_name": "58I",
+  "route_id": "58",
+   "route_description": "Ponte Alta / Uberaba (via Peirópolis)"
+ },
+
+ {
+  "route_name": "59C",
+  "route_id": "59",
+   "route_description": "Cássio Resende / Hospital Universitário"
+ },
+
+ {
+  "route_name": "60H",
+  "route_id": "60",
+   "route_description": "Terminal Leste / Residencial 2000"
+ },
+
+ {
+  "route_name": "61I",
+  "route_id": "61",
+   "route_description": "Distrito Industrial 3 (via Baixa)"
+ },
+
+ {
+  "route_name": "62H",
+  "route_id": "62",
+   "route_description": "Terminal Leste / Josa Bernardino"
+ },
+
+ {
+  "route_name": "63I",
+  "route_id": "63",
+   "route_description": "Palestina / Uberaba (via Serrinha)"
+ },
+
+ {
+  "route_name": "64H",
+  "route_id": "64",
+   "route_description": "Terminal Leste / Mercado Municipal"
+ },
+
+ {
+  "route_name": "65A",
+  "route_id": "65",
+   "route_description": "Terminal Oeste / Gameleira"
+ },
+
+ {
+  "route_name": "66F",
+  "route_id": "19",
+   "route_description": "Terminal Oeste / Jd. Espirito Santo"
+ },
+
+ {
+  "route_name": "67H",
+  "route_id": "67",
+   "route_description": "Terminal Leste / Jardim Anatê"
+ },
+ {
+  "route_name": "68G",
+  "route_id": "68",
+   "route_description": "Praça Rui Barbosa / Rio de Janeiro"
+ },
+ {
+  "route_name": "C110",
+  "route_id": "5",
+   "route_description": "Circular 1 - via Prudente de Morais"
+ },
+ {
+  "route_name": "C111",
+  "route_id": "6",
+   "route_description": "Circular 2 - via João XXIII"
+ },
+ {
+  "route_name": "I120",
+  "route_id": "120",
+   "route_description": "Interbairros 01"
+ },
+ {
+  "route_name": "I121",
+  "route_id": "121",
+   "route_description": "Interbairros 02"
+ }
+]

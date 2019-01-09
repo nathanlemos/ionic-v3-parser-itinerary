@@ -1,0 +1,13 @@
+page-home {
+	.icon-container{
+		padding: .5em;
+		border: solid 1px red;
+		display: inline;
+		color:  color($colors, primary);
+	}
+
+	.item-wrapper .icon{
+		color: #666666;
+	}
+
+}

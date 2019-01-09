@@ -1,0 +1,67 @@
+<ion-header>
+	<ion-navbar color="secondary">
+		<ion-title>{{line.route_description}}</ion-title>
+		<ion-buttons start>
+			<button ion-button item-right icon-left (click)="dismiss()">
+				<ion-icon name="close" ></ion-icon> 
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+	<ion-toolbar no-border-top>
+		<ion-segment [(ngModel)]="currentHeader" (ionChange)="selectedTabChanged($event)" *ngIf="headers.length > 0">
+			<ion-segment-button value="{{header.header}}" *ngFor="let header of headers">
+				{{header.description}}
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+</ion-header>
+<ion-content>
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<!--
+	<ion-list>
+		<ion-item-divider>
+			{{lineInfo}}
+		</ion-item-divider>
+
+		<div *ngFor="let stop of stops">
+			<ion-item class="detail-item">			
+				<ion-icon name="{{stop.icon}}" item-left large icon-container ></ion-icon> 
+				<h2>{{stop.time}}</h2>
+				<p>{{stop.description}}</p>
+			</ion-item>
+		</div>
+	</ion-list>
+-->
+
+<ion-list>
+	<ion-item-divider>
+		{{lineInfo}}
+	</ion-item-divider>
+</ion-list>
+<section id="cd-timeline" class="cd-container">
+	<div *ngFor="let stop of stops; let isLast=last ">
+		<div class="cd-timeline-block" [ngClass]="{'last-item': isLast }">
+			<!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
+			<div class="cd-timeline-icon royal icon-color icon-color-{{stop.icon}}">
+				<ion-icon name="{{stop.icon}}" ></ion-icon>				
+			</div>
+			<!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
+			<div class="cd-timeline-content royal">
+				<h5 class="marginBottom0 marginTop0" *ngIf="stop.time"> <ion-icon name="ios-time-outline"></ion-icon> {{stop.time}}</h5>
+				<p class="timelineText">{{stop.description}}</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="div-msg" *ngIf="!stops.length">
+	Sem mais horários para hoje
+</div>
+
+<ion-fab right bottom>
+	<button ion-fab color="light" class="btn-favorite" (click)="toggleFavorites()"><ion-icon name="{{favIcon}}"></ion-icon></button>
+</ion-fab>
+</ion-content>

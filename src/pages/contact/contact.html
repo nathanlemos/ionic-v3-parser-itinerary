@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      {{category.name}}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-card class="news-card" *ngFor="let n of news">
+  <ion-card-header>{{ n.title }}</ion-card-header>
+  <ion-card-content>
+    <i>Por JM Online</i>
+    <p>{{n.description }}</p>
+  </ion-card-content>
+  <ion-row>
+    <ion-col center text-center>
+      <ion-note>
+        Em {{n.pubDate}}
+      </ion-note>
+    </ion-col>
+    <ion-col>
+      <a ion-button clear small href="{{ n.link }}">
+        <div>Ver na íntegra</div>
+
+      </a>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+<div class="div-msg" *ngIf="news.length == 0 && !isRefreshing">    
+      Sem resultados de notícias <br/> na categoria {{category.name}}
+</div>
+
+</ion-content>

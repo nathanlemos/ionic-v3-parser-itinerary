@@ -1,0 +1,5 @@
+<ion-list inset class="popover-page">
+  <button ion-item *ngFor="let category of categories" (click)="selectNewsCategory(category)">
+    {{ category.name }}
+  </button> 
+</ion-list>
